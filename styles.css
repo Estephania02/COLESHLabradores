@@ -1,0 +1,212 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif; /* Fuente principal */
+    background-color: #ffffff; /* Fondo blanco */
+    color: #000000; /* Texto negro por defecto */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #004586; /* Fondo azul */
+    padding: 10px 0;
+}
+
+.header-container {
+    width: 100%;
+}
+
+.logo-container {
+    width: 100%;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    text-align: center;
+    color: #004586; /* Azul para el título */
+}
+
+h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 36px;
+    color: #004586; /* Azul para los subtítulos */
+    margin-top: 0;
+    text-align: center; /* Centrar la palabra Labradores */
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #b2c43b; /* Verde para la línea de título activo */
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Buttons */
+.buttons {
+    background-color: #b2c43b; /* Verde */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.buttons button {
+    background-color: #ffffff; /* Blanco para los botones */
+    border: none;
+    color: #004586; /* Azul texto de los botones */
+    padding: 10px 20px;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+    border-radius: 5px; /* Bordes redondeados para los botones */
+}
+
+.buttons button.active {
+    background-color: #bba45b; /* Dorado para el botón activo */
+    color: #000000; /* Negro para el texto del botón activo */
+}
+
+/* Botones Activos */
+.feature-buttons .toggle-btn.active, .role-buttons .toggle-btn.active {
+    background-color: #bba45b; /* Color dorado para el botón activo */
+    color: #000000; /* Texto negro para el botón activo */
+    border: 2px solid #000000; /* Borde negro para destacar el botón activo */
+}
+
+/* Opcional: Efecto de sombra para mayor énfasis */
+.feature-buttons .toggle-btn.active, .role-buttons .toggle-btn.active {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+/* Content Layout */
+.content {
+    display: flex;
+}
+
+.content-left {
+    flex: 2;
+    padding: 20px;
+    border: 2px solid #cccccc; /* Borde gris claro */
+    background-color: #ffffff; /* Fondo blanco */
+}
+
+.content-right {
+    flex: 1;
+    padding: 20px;
+}
+
+.divider {
+    width: 1px;
+    background-color: #b2c43b; /* Verde para la línea divisoria */
+    height: 100%;
+    margin: 0 20px;
+}
+
+/* Hidden Content */
+.hidden-content {
+    display: none;
+}
+
+.hidden-content.active {
+    display: block;
+}
+
+/* Feature and Role Buttons */
+.feature-buttons button, .role-buttons button {
+    background-color: #004586; /* Azul oscuro */
+    color: #ffffff; /* Blanco */
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.feature-buttons .toggle-btn.active, .role-buttons .toggle-btn.active {
+    background-color: #bba45b; /* Color dorado para el botón activo */
+    color: #000000; /* Texto negro para el botón activo */
+    border: 2px solid #000000; /* Borde negro para destacar el botón activo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #004586; /* Azul para el pie de página */
+    color: #ffffff; /* Blanco para el texto del pie de página */
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+}
+
+.footer-content strong {
+    font-weight: bold;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.copyright {
+    font-size: 12px;
+}
+
+/* Agrega esto al final del archivo */
+.logo-container {
+    position: absolute;
+    top: 0px;
+    left: 30px;
+}
+
+.logo-container img {
+    width: 200px;
+    height: auto;
+}
+
+/* Estilos para el logo adicional en la parte superior derecha */
+.fixed-logo {
+    position: fixed;
+    top: 5px; /* Ajusta la distancia desde la parte superior */
+    right: 10px; /* Ajusta la distancia desde la parte derecha */
+    z-index: 1000; /* Asegúrate de que esté sobre otros elementos */
+}
+
+.fixed-logo img {
+    width: 230px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+}
+
+/* styles.css */
+.justify-text {
+    text-align: justify;
+}
+
+.image-with-border {
+    border: 2px solid #004586; /* Ajusta el grosor y color del borde según sea necesario */
+    border-radius: 5px; /* Opcional: para bordes redondeados */
+}
